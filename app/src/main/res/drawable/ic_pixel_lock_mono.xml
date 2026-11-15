@@ -1,0 +1,14 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="16"
+    android:viewportHeight="16">
+    <!-- Shackle -->
+    <path
+        android:fillColor="#131417"
+        android:pathData="M5,2 h6 v1 h1 v4 h-2 v-3 h-4 v3 h-2 v-4 h1 z" />
+    <!-- Body with Keyhole Cutout -->
+    <path
+        android:fillColor="#131417"
+        android:pathData="M3,7 h10 v7 h-10 z M7,9 v3 h2 v-3 z" />
+</vector>

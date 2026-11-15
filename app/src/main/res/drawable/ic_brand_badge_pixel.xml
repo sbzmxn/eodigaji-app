@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="40dp"
+    android:viewportWidth="32"
+    android:viewportHeight="32">
+    <!-- Stepped Pixel Badge Frame (Outer Terracotta Border + Espresso Body) -->
+    <path
+        android:fillColor="#8A502E"
+        android:pathData="M3,1 h26 v1 h1 v1 h1 v26 h-1 v1 h-1 v1 h-26 v-1 h-1 v-1 h-1 v-26 h1 v-1 h1 z" />
+    <path
+        android:fillColor="#2B1810"
+        android:pathData="M4,2 h24 v1 h1 v1 h1 v24 h-1 v1 h-1 v1 h-24 v-1 h-1 v-1 h-1 v-24 h1 v-1 h1 z" />
+    <!-- Subtle Warm Top Highlight -->
+    <path
+        android:fillColor="#4F2D1D"
+        android:pathData="M4,2 h24 v1 h-24 z M3,3 h1 v1 h-1 z M28,3 h1 v1 h-1 z" />
+    <!-- Open-Corner Stamp Frame (Cream White) -->
+    <path
+        android:fillColor="#FFF5E4"
+        android:pathData="M9,5 h16 v1 h-16 z M25,6 h1 v1 h-1 z M26,7 h1 v18 h-1 z M25,25 h1 v1 h-1 z M7,26 h18 v1 h-18 z M6,25 h1 v1 h-1 z M5,9 h1 v16 h-1 z" />
+    <!-- Pixel ㅇ (top-left, teardrop pinch) -->
+    <path
+        android:fillColor="#FFF5E4"
+        android:pathData="M10,8 h3 v1 h-3 z M9,9 h1 v4 h-1 z M13,9 h1 v4 h-1 z M10,13 h3 v1 h-3 z M12,14 h1 v1 h-1 z" />
+    <!-- Pixel ㄷ (top-right, with top-left tick) -->
+    <path
+        android:fillColor="#FFF5E4"
+        android:pathData="M17,8 h1 v1 h-1 z M18,9 h5 v1 h-5 z M18,10 h1 v5 h-1 z M19,14 h4 v1 h-4 z" />
+    <!-- Pixel ㄱ (bottom-left) -->
+    <path
+        android:fillColor="#FFF5E4"
+        android:pathData="M8,18 h6 v1 h-6 z M13,19 h1 v5 h-1 z" />
+    <!-- Pixel ㅈ (bottom-right) -->
+    <path
+        android:fillColor="#FFF5E4"
+        android:pathData="M17,18 h5 v1 h-5 z M20,19 h1 v2 h-1 z M19,21 h1 v1 h-1 z M18,22 h1 v1 h-1 z M17,23 h1 v1 h-1 z M21,21 h1 v1 h-1 z M22,22 h1 v1 h-1 z M23,23 h1 v1 h-1 z" />
+</vector>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag_wire_bg" type="id" />
+    <item name="tag_text_role" type="id" />
+    <item name="tag_icon_role" type="id" />
+    <item name="tag_base_text_size" type="id" />
+    <item name="tag_base_corner_radius" type="id" />
+    <item name="tag_base_typeface" type="id" />
+    <item name="tag_base_background" type="id" />
+</resources>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#73000000"
+    android:clickable="true"
+    android:elevation="22dp"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/cardOptionsDialog"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_ui_modal"
+        android:clickable="true"
+        android:elevation="8dp"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivOptionsHeaderIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_pleos_settings"
+                app:tint="#131417" />
+
+            <TextView
+                android:id="@+id/tvOptionsTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="옵션"
+                android:textColor="#131417"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/btnOptionsTopClose"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/ivOptionsTopCloseIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_close"
+                    app:tint="#656769" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Section 1: Theme -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"
+            android:text="화면 테마"
+            android:textColor="#656769"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnOptThemeAuto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_selected"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="시스템"
+                android:textColor="#131417"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptThemeLight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="라이트"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptThemeDark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="다크"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptThemePixel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="픽셀"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Section 2: Font Size -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:text="글씨 크기"
+            android:textColor="#656769"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnOptFontSmall"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="작게"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptFontNormal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_selected"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="보통"
+                android:textColor="#131417"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptFontLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="크게"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnOptFontXLarge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_sub"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="아주 크게"
+                android:textColor="#36373A"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Section 3: Guide, Permissions & Terms -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:text="이용 안내 및 권한·약관"
+            android:textColor="#656769"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/btnOptGuide"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ui_sub"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="22dp">
+
+            <ImageView
+                android:id="@+id/ivOptGuideIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="14dp"
+                android:src="@drawable/ic_pleos_info"
+                app:tint="#131417" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="어디가지 이용 안내"
+                android:textColor="#131417"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivOptGuideChevron"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_chevron_right"
+                app:tint="#656769" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnOptOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_ui_sub"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="22dp">
+
+            <ImageView
+                android:id="@+id/ivOptOverlayIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="14dp"
+                android:src="@drawable/ic_pleos_nav_arrow"
+                app:tint="#131417" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="내비 위 도착 안내·목적지 가림"
+                android:textColor="#131417"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptOverlayStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="꺼짐 · 설정"
+                android:textColor="#656769"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivOptOverlayChevron"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_chevron_right"
+                app:tint="#656769" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnOptTerms"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/bg_ui_sub"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="22dp">
+
+            <ImageView
+                android:id="@+id/ivOptTermsIcon"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginEnd="14dp"
+                android:src="@drawable/ic_pleos_lock"
+                app:tint="#131417" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="위치기반 서비스 이용약관"
+                android:textColor="#131417"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptTermsStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="동의 완료"
+                android:textColor="#656769"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivOptTermsChevron"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:src="@drawable/ic_chevron_right"
+                app:tint="#656769" />
+        </LinearLayout>
+
+        <!-- Section 4: Debug Info (Visible ONLY when BuildConfig.DEBUG == true) -->
+        <LinearLayout
+            android:id="@+id/llOptDebugSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_ui_sub"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧪 개발/테스트 디버그 정보 (DEBUG ONLY)"
+                android:textColor="#3D70F5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvOptDebugCurrentCoords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="현재 차량 좌표: 37.4979, 127.0276"
+                android:textColor="#131417"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvOptDebugDestCoords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="추천 목적지: (미설정)"
+                android:textColor="#131417"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/btnOptDebugSimulateArrival"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_ui_selected"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="🎯 도착 테스트 (P 주차 &amp; 언박싱 실행)"
+                android:textColor="#131417"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Footer CTA -->
+        <TextView
+            android:id="@+id/btnOptionsClose"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_ui_cta"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="닫기"
+            android:textColor="#FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

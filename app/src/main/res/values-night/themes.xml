@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Eodigaji" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryVariant">@color/neon_blue_gradient_end</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/neon_blue_light</item>
+        <item name="colorSecondaryVariant">@color/neon_blue</item>
+        <item name="colorOnSecondary">@color/bg_main</item>
+        <!-- Background -->
+        <item name="android:windowBackground">@color/bg_main</item>
+        <!-- Status bar / Navigation bar -->
+        <item name="android:statusBarColor">@color/bg_main</item>
+        <item name="android:navigationBarColor">@color/bg_main</item>
+    </style>
+</resources>

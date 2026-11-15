@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+    <!-- Left Pane: Full Postcard Image (KOGL Type 3 compliant: fitCenter, uncropped, non-overlaid attribution) -->
+    <LinearLayout
+        android:id="@+id/cardArrivedPhoto"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="28dp"
+        android:layout_weight="1.32"
+        android:background="@drawable/bg_ui_surface"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivArrivedPostcard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="도착 장소 사진"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/tvArrivedPhotoCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="사진 한국관광공사"
+            android:textColor="#656769"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Right Dock: Reveal Info + Save CTA (rating deferred to next app launch) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/cardArrivedDock"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ui_surface"
+            android:orientation="vertical"
+            android:paddingHorizontal="34dp"
+            android:paddingVertical="30dp">
+
+            <TextView
+                android:id="@+id/tvArrivedOverline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="숨겨진 평온, 오늘의 비밀 장소는"
+                android:textColor="#656769"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvArrivedPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="우면산자연생태공원"
+                android:textColor="#131417"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="18dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvArrivedOverview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="6dp"
+                        android:text="장소 소개"
+                        android:textColor="#36373A"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/tvArrivedAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="주소 정보"
+                        android:textColor="#656769"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnArrivedSave"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_ui_cta"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="도감에 저장"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

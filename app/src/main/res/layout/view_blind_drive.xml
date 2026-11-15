@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- State 1: Driving Safety Lock (04b-driving-locked) -->
+    <LinearLayout
+        android:id="@+id/llDriveLocked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivDriveLockIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_pleos_lock"
+            app:tint="#131417" />
+
+        <TextView
+            android:id="@+id/tvDriveLockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정차 후 이용해 주세요"
+            android:textColor="#131417"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDriveLockSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="안내 중이라면 도착하면 알려 드릴게요"
+            android:textColor="#656769"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <!-- State 2: Parked Active Drive Controls -->
+    <LinearLayout
+        android:id="@+id/llDriveParked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Left Pane: Drive Progress & Status -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="28dp"
+            android:layout_weight="1.38"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDriveTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="비밀 장소를 향해 달리고 있어요"
+                android:textColor="#131417"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDriveSubInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="22dp"
+                android:text="도착해서 주차하면 정체가 열려요"
+                android:textColor="#656769"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/cardDriveStatus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_surface"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="38dp">
+
+                <TextView
+                    android:id="@+id/tvDriveEtaMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남은 시간 약 28분"
+                    android:textColor="#131417"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/pbDriveProgress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="32dp"
+                    android:max="100"
+                    android:progress="25"
+                    android:progressBackgroundTint="#EBECEE"
+                    android:progressTint="#131417" />
+
+                <TextView
+                    android:id="@+id/tvDriveNaviStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pleos 내비게이션 안내 중"
+                    android:textColor="#131417"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDriveGearStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="기어 [P] 주차 확인 · 도착 대기 중"
+                    android:textColor="#656769"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tvDriveDebugCoords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#15000000"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="🧪 [DEBUG] 좌표 확인"
+                    android:textColor="#3D70F5"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Right Dock: Dark Hero + Navi / Cancel -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cardDriveHeroDock"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ui_hero_dark"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 비밀 장소"
+                    android:textColor="#A5A6A9"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDriveDockAlias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="숨겨진 평온"
+                    android:textColor="#FFFFFF"
+                    android:textSize="36sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="86dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnDriveResumeNavi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="14dp"
+                    android:layout_weight="1.35"
+                    android:background="@drawable/bg_ui_cta"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="내비게이션 열기"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnDriveCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_ui_sub"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="그만두기"
+                    android:textColor="#131417"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

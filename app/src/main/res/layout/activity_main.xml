@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Minimal Top Header Bar -->
+        <LinearLayout
+            android:id="@+id/llTopBar"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="32dp">
+
+            <ImageView
+                android:id="@+id/btnTopBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="뒤로 가기"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_chevron_left"
+                android:visibility="gone"
+                app:tint="#131417" />
+
+            <ImageView
+                android:id="@+id/ivTopBrand"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="14dp"
+                android:contentDescription="어디가지 아이콘"
+                android:src="@drawable/ic_brand_badge" />
+
+            <TextView
+                android:id="@+id/tvTopTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="어디가지"
+                android:textColor="#131417"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/btnTopArchive"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_ui_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivTopArchiveIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_pleos_bookmark"
+                    app:tint="#131417" />
+
+                <TextView
+                    android:id="@+id/tvTopArchiveLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도감"
+                    android:textColor="#131417"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnTopOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_ui_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivTopOptionsIcon"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_pleos_settings"
+                    app:tint="#131417" />
+
+                <TextView
+                    android:id="@+id/tvTopOptionsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="옵션"
+                    android:textColor="#131417"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTopClearAll"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingHorizontal="14dp"
+                android:text="전체 삭제"
+                android:textColor="#656769"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Main Screen Area -->
+        <FrameLayout
+            android:id="@+id/flContentArea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingHorizontal="32dp"
+            android:paddingBottom="24dp">
+
+            <include
+                android:id="@+id/viewSplash"
+                layout="@layout/view_splash"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewConsent"
+                layout="@layout/view_consent"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewTerms"
+                layout="@layout/view_terms"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewHome"
+                layout="@layout/view_home"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewStepTimeRoute"
+                layout="@layout/view_step_time_route"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewStepKeywords"
+                layout="@layout/view_step_keywords"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewLoading"
+                layout="@layout/view_loading"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewDestinationSealed"
+                layout="@layout/view_destination_sealed"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewBlindDrive"
+                layout="@layout/view_blind_drive"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewArrived"
+                layout="@layout/view_arrived"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/viewSecretArchive"
+                layout="@layout/view_secret_archive"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <!-- Options Dialog Overlay -->
+    <include
+        android:id="@+id/viewOptionsDialog"
+        layout="@layout/view_options_dialog"
+        android:visibility="gone" />
+
+    <!-- Post-Visit Rating Dialog Overlay -->
+    <include
+        android:id="@+id/viewRatingDialog"
+        layout="@layout/view_rating_dialog"
+        android:visibility="gone" />
+
+    <!-- Unified Modal Dialog Overlay -->
+    <include
+        android:id="@+id/viewModalDialog"
+        layout="@layout/view_modal_dialog"
+        android:visibility="gone" />
+
+    <!-- Bottom Toast Pill -->
+    <LinearLayout
+        android:id="@+id/llPleosToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/bg_pleos_toast"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvPleosToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="안내 메시지"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</FrameLayout>

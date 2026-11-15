@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Compact Displays (Window width < 600dp e.g. narrow split screen or phone) -->
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- Top Nav -->
+    <dimen name="top_nav_height">54dp</dimen>
+    <dimen name="top_nav_tab_width">52dp</dimen>
+    
+    <!-- Back Button -->
+    <dimen name="btn_back_size">40dp</dimen>
+    
+    <!-- Right Side Panel Width -->
+    <dimen name="side_panel_width">260dp</dimen>
+    
+    <!-- Typography -->
+    <dimen name="text_title_hero">28sp</dimen>
+    <dimen name="text_title_large">22sp</dimen>
+    <dimen name="text_title_medium">18sp</dimen>
+    <dimen name="text_title_small">15sp</dimen>
+    <dimen name="text_body_large">15sp</dimen>
+    <dimen name="text_body_medium">13sp</dimen>
+    <dimen name="text_body_small">11sp</dimen>
+    
+    <!-- Buttons -->
+    <dimen name="btn_primary_height">48dp</dimen>
+    <dimen name="btn_corner_radius">12dp</dimen>
+    
+    <!-- Time Selector -->
+    <dimen name="time_box_height">76dp</dimen>
+    <dimen name="time_box_number_size">42sp</dimen>
+    <dimen name="time_btn_step_size">48dp</dimen>
+    <dimen name="time_chip_height">44dp</dimen>
+</resources>

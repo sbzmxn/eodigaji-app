@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UI_bin Light Mode Palette -->
+    <color name="bg_main">#F7F8FA</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_card_selected">#FFFFFF</color>
+    <color name="bg_card_dark">#EBECEE</color>
+    <color name="bg_hero_dark">#131417</color>
+
+    <!-- Primary CTA & Monochrome Accent -->
+    <color name="primary_blue">#44464E</color>
+    <color name="primary_blue_pressed">#131417</color>
+    <color name="neon_blue">#44464E</color>
+    <color name="neon_blue_light">#656769</color>
+    <color name="neon_blue_glow">#44464E</color>
+    <color name="neon_blue_gradient_start">#44464E</color>
+    <color name="neon_blue_gradient_end">#131417</color>
+
+    <!-- Status / Toast -->
+    <color name="pleos_positive">#131417</color>
+    <color name="pleos_positive_bg">#EBECEE</color>
+    <color name="pleos_positive_border">#E2E3E5</color>
+    <color name="pleos_warning">#656769</color>
+    <color name="pleos_warning_bg">#EBECEE</color>
+    <color name="pleos_warning_border">#E2E3E5</color>
+    <color name="pleos_danger">#C92A2A</color>
+    <color name="pleos_danger_bg">#FDECEE</color>
+    <color name="pleos_danger_border">#F5B7B7</color>
+    <color name="pleos_toast_bg">#313236</color>
+
+    <color name="gold_seal">#44464E</color>
+    <color name="gold_seal_ring">#131417</color>
+    <color name="gold_seal_light">#656769</color>
+
+    <!-- Borders -->
+    <color name="border_glass">#E2E3E5</color>
+    <color name="border_glass_subtle">#E8E9EB</color>
+    <color name="border_neon_selected">#131417</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#131417</color>
+    <color name="text_secondary">#656769</color>
+    <color name="text_tertiary">#9A9B9F</color>
+    <color name="text_accent">#131417</color>
+    <color name="text_gold">#131417</color>
+
+    <color name="toggle_off">#9A9B9F</color>
+    <color name="toggle_on">#131417</color>
+</resources>

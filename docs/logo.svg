@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="128" height="128">
+    <!-- Rounded square badge background -->
+    <path fill="#131417" d="M24,2 H76 A22,22 0 0 1 98,24 V76 A22,22 0 0 1 76,98 H24 A22,22 0 0 1 2,76 V24 A22,22 0 0 1 24,2 Z" />
+    <g transform="translate(14, 14) scale(0.72)">
+        <!-- Outer organic stamp frame with top-left gap -->
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M15.5,9.5 C32.0,6.8 66.0,6.2 91.0,7.8 Q95.0,8.2 94.8,12.5 C94.4,34.0 93.8,67.0 92.4,88.5 Q92.0,93.0 87.2,93.5 C65.0,94.4 35.0,93.8 14.5,91.8 Q7.8,90.6 6.6,83.2 C5.0,62.0 5.4,35.0 7.6,18.0" />
+        <!-- ㅇ -->
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M30.6,17.5 C24.4,17.4 21.3,23.2 21.5,29.8 C21.7,37.2 26.8,42.5 33.0,46.0" />
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M30.6,17.5 C36.6,17.7 39.9,22.2 39.7,28.5 C39.4,35.2 34.8,41.4 28.6,46.6" />
+        <!-- ㄷ -->
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M60.2,16.0 L63.0,18.9 Q70.2,18.6 77.4,19.1" />
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M63.0,18.9 C59.2,21.5 57.8,26.8 57.5,33.5 L57.3,43.8 Q57.3,45.8 59.6,45.8 L78.6,46.2" />
+        <!-- ㄱ -->
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M19.0,65.5 C26.0,63.0 35.5,62.3 40.6,63.4 Q42.8,63.9 42.8,66.8 L43.0,81.5" />
+        <!-- ㅈ -->
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M54.0,62.8 C60.0,61.6 66.5,61.6 69.2,62.4 C70.6,62.8 70.2,64.8 68.5,67.5 C65.0,73.2 60.2,78.4 55.2,82.6" />
+        <path fill="none" stroke="#FFFFFF" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"
+            d="M67.5,67.6 C70.6,73.4 74.8,77.6 81.2,78.6" />
+    </g>
+</svg>
